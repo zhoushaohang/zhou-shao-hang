@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <div>homeshoye</div>
 </template>
 <script>
 export default {
-  name: 'hoem',
+  name: 'home',
   props: {},
   components: {},
   data() {
