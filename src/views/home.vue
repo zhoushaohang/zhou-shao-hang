@@ -1,11 +1,16 @@
 <template>
-  <div>homeshoye</div>
+  <div >
+    <Head/>
+  </div>
 </template>
 <script>
+import Head from '../components/Head'
 export default {
   name: 'home',
   props: {},
-  components: {},
+  components: {
+    Head
+  },
   data() {
     return {};
   },
@@ -16,5 +21,6 @@ export default {
   mounted() {},
 };
 </script>
-<style lang='lass' scoped>
+<style  scoped>
+
 </style>
