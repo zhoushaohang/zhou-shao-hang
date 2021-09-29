@@ -5,13 +5,13 @@
          <img src="https://www.novogene.com/views/default/img/logo.png" alt="">
       </a-menu-item>
     <a-menu-item key="mail">
-      <template #icon>
+      <template>
         <mail-outlined />
       </template>
       首页
     </a-menu-item>
     <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>科技服务</template>
@@ -25,7 +25,7 @@
       </a-menu-item-group>
     </a-sub-menu>
     <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>科研产品</template>
@@ -39,7 +39,7 @@
       </a-menu-item-group>
     </a-sub-menu>
     <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>肿瘤合作研究</template>
@@ -53,7 +53,7 @@
       </a-menu-item-group>
     </a-sub-menu>
         <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>遗传合作研究</template>
@@ -67,7 +67,7 @@
       </a-menu-item-group>
     </a-sub-menu>
         <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>药企服务</template>
@@ -81,7 +81,7 @@
       </a-menu-item-group>
     </a-sub-menu>
         <a-sub-menu>
-      <template #icon>
+      <template >
         <setting-outlined />
       </template>
       <template #title>关于诺和</template>

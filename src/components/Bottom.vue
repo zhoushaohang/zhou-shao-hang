@@ -313,12 +313,13 @@ export default {
 .fot-nav dl a {
   color: #fff;
 }
-.fot-nav dl dd a :hover {
-  color: rgb(0, 0, 0);
+.fot-nav dl dd a:hover {
+  color: rgb(35, 240, 16);
 }
 .fot-logo a{
   color: #fff;
 }
+
 .tel {
   color: #fff;
 }
