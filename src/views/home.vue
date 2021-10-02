@@ -701,9 +701,13 @@ export default {
   width: 100%;
   height: 100%;
 }
+.box-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .ant-carousel :deep(.slick-slide) {
   text-align: center;
-  height: 600px;
   line-height: 160px;
 }
 
@@ -712,7 +716,7 @@ export default {
 }
 
 .part {
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -736,7 +740,7 @@ export default {
   margin-top: 20px;
 }
 .xian {
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
   margin-top: 50px;
   font-size: 40px;
@@ -745,7 +749,7 @@ export default {
   font-size: 30px;
 }
 .text-box {
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
 }
 .text-box strong {
@@ -762,14 +766,18 @@ export default {
   font-size: 16px;
 }
 .index_div_left {
-  margin-left: 140px;
+  margin-left: 0px;
 }
 .index_div_right {
-  margin-right: 140px;
+  margin-right: 0px;
 }
 .index_div_left a {
   margin-top: 30px;
   margin-left: 30px;
+}
+.bottons {
+  width: 1200px;
+  margin: 0 auto;
 }
 .bottons button {
   width: 100px;

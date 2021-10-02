@@ -288,22 +288,24 @@ export default {
   background-color: #4c4a44;
 }
 .footer-nav {
-  width: 80%;
+  width: 1400px;
   margin: 0 auto;
   height: 324px;
   overflow: hidden;
 }
 .fot-info {
   float: left;
+  display:inline ;
   margin-top: 90px;
 }
 .fot-nav {
   float: right;
+  display: inline;
    margin-top: 60px;
 }
 .fot-nav dl {
-  float: left;
-  margin: 0 20px;
+  float: right;
+  margin: 0 10px;
   color: #fff;
 }
 .fot-nav dl dt  {

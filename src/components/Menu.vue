@@ -92,6 +92,7 @@
       <a-menu-item-group title="Item 2">
         <a-menu-item key="setting:3">Option 3</a-menu-item>
         <a-menu-item key="setting:4">Option 4</a-menu-item>
+        <a href="https://virtualboothnovogeneamea.com/?utm_source=Website&utm_medium=banner&utm_campaign=AMEA-Virtual+Booth"></a>
       </a-menu-item-group>
     </a-sub-menu>
   </a-menu>
