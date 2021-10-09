@@ -2,7 +2,11 @@
   <div>
      <Head />
      <Menu />
-     345346
+     <ul>
+       <li>12</li>
+       <li>12</li>
+       <li>12</li>
+     </ul>
   </div>
 </template>
 <script>
@@ -22,5 +26,11 @@ export default {
   mounted() {},
 };
 </script>
-<style lang='lass' scoped>
+<style lang='less' scoped>
+ul {
+  display: block;
+  li {
+    width: 100px;
+  }
+}
 </style>

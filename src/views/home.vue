@@ -699,6 +699,10 @@
                </dd>
             </dl>
          </div>
+         <!--  -->
+         <div class="xian">
+            <a-divider plain="true">科技服务</a-divider>
+         </div>
       </div>
    </div>
    <Bottom />
@@ -725,7 +729,7 @@ export default {
    mounted() {},
 }
 </script>
-<style scoped>
+<style  scoped>
 * {
    margin: 0;
    padding: 0;
