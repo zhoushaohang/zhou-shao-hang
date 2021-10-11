@@ -4,7 +4,7 @@
 </template>
 <script>
 export default {
-  name: '',
+  name: 'bo',
   props: {},
   components: {},
   data() {
