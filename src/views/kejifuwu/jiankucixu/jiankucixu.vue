@@ -3,7 +3,9 @@
     <Head />
     <Menu />
     <div class="lious" >
-      爱吃
+    <ul>
+      <li>123</li>
+    </ul>
     </div>
     <Bottom />
   </div>
@@ -12,17 +14,26 @@
 import Head from '../../../components/Head.vue'
 import Menu from '../../../components/Menu'
 import Bottom from '../../../components/Bottom'
+import Axios from 'axios'
 export default {
   name: '',
   props: {},
-  components: {Head,Menu,Bottom},
+  components: {Head,Menu,Bottom,},
   data() {
     return {};
   },
   computed: {},
   watch: {},
-  methods: {},
-  created() {},
+  methods: {
+    dataSource () {
+      Axios.get('http://www.liulongbin.top:3006/api/getbooks').then(res => {
+        console.log(res);
+      })
+    }
+  },
+  created() {
+    this.dataSource()
+  },
   mounted() {},
 };
 </script>

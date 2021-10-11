@@ -2,12 +2,7 @@ const routes = [
   {
     name: 'hoem',
     path: '/',
-    component: () => import('../views/home.vue'),
-    breadcrumbName: '首页',
-    meta: {
-      label: '首页',
-      icon: 'home',
-    },
+    component: () => import('../views/home.vue')
   },
   {
     name:'kiji',
