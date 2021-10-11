@@ -26,79 +26,21 @@
                 <template>
                     <setting-outlined />
                 </template>
-                <template #title>科技服务</template>
+                <template #title> 科技服务</template>
                 <a-menu-item-group title="建库测序">
                     <a-menu-item key="setting:1"
-                        ><router-link to="/jiankucixu"
-                            >二代建库测序服务</router-link
+                        ><router-link to="/2daizhijianku">
+                            二代建库测序服务</router-link
                         ></a-menu-item
                     >
-                    <a-menu-item key="setting:2">三代建库测序服务</a-menu-item>
+                    <a-menu-item key="setting:2"
+                        ><router-link to="/boozhijianku"
+                            >三代建库测序服务</router-link
+                        ></a-menu-item
+                    >
                     <a-menu-item key="setting:3"
-                        ><router-link to="/kiji"
-                            >Bionano 建库测序服务</router-link
-                        >
+                        >Bionano 建库测序服务
                     </a-menu-item>
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
-                </a-menu-item-group>
-                <a-menu-item-group title="空间转录组测序">
-                    <a-menu-item key="setting:4"
-                        >10x Visium 空间转录组</a-menu-item
-                    >
                 </a-menu-item-group>
             </a-sub-menu>
             <a-sub-menu>
