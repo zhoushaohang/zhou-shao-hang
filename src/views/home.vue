@@ -729,7 +729,7 @@ export default {
    mounted() {},
 }
 </script>
-<style  scoped>
+<style lang='less'  scoped>
 * {
    margin: 0;
    padding: 0;
@@ -828,5 +828,14 @@ export default {
    display: block;
    color: #6d9940;
    background-color: #fff;
+}
+.clearfix {
+   margin-top: 40px;
+   dl {
+      display: table-cell;
+   }
+   dt {
+      text-align: center;
+   }
 }
 </style>
