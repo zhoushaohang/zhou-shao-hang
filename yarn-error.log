@@ -23,7 +23,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "novogene",
+    "name": "zhoushaohang",
     "version": "0.0.0",
     "scripts": {
       "dev": "vite --open",
