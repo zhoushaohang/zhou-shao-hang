@@ -11,16 +11,6 @@ const routes = [
   component :() => import('../views/home.vue')
 },
 {
-  name:'jianjie',
-  path:'/jianjie',
-  component: () => import('../views/jianjie.vue')
-},
-{
-  name:'deong',
-  path:'/deong',
-  component: () => import('../views/deong.vue')
-},
-{
   name:'zhou',
   path:'/zhou',
   component: () => import('../views/zhou.vue')
