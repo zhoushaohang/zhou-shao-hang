@@ -1,37 +1,21 @@
 <template>
     <div>
-        <div class="box-head">
-            <a-breadcrumb style="float: right; margin-right: 30px">
-                <a-input-search
-                    v-model:value="value"
-                    placeholder="请输入..."
-                    style="width: 200px"
-                    @search="onSearch"
-                />
-                <a-breadcrumb-item class="kehu"
-                    ><a href="https://css.novogene.com/index.jsp"
-                        >客户服务系统CSS</a
-                    ></a-breadcrumb-item
-                >
-                <a-breadcrumb-item class="english">
-                    <a href="http://en.novogene.com/" style="color: #fff"
-                        >English</a
-                    >
-                    <template #overlay>
-                        <a-menu>
-                            <a-menu-item>
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="http://jp.novogene.com/"
-                                    >日本語</a
-                                >
-                            </a-menu-item>
-                            <a-menu-item> 科技服务： 400 658 1585 </a-menu-item>
-                        </a-menu>
-                    </template>
-                </a-breadcrumb-item>
-            </a-breadcrumb>
+        <div class="top">
+            <div class="left">
+                <router-link to="/">
+                    <img
+                        src="https://www.hillhouseinvestment.com/wp-content/uploads/2021/06/cropped-Screenshot-3.png"
+                        alt=""
+                    />
+                </router-link>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><router-link to="">关于我们</router-link></li>
+                    <li><router-link to="">新闻报道</router-link></li>
+                    <li><router-link to="">EN</router-link></li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -52,19 +36,36 @@ export default {
     mounted() {},
 }
 </script>
-<style  scoped>
-.box-head {
-    height: 50px;
-    background-color: #6d9940;
+<style lang='less'  scoped>
+.router-link-active {
+    text-decoration: none;
+    color: #000;
 }
-.ant-breadcrumb a {
-    color: #fff;
+.top {
+    height: 60px;
 }
-.kehu {
-    margin-left: 10px;
-    line-height: 50px;
+.left {
+    display: inline-block;
+    width: 200px;
+    float: left;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
-.ant-breadcrumb > span:last-child {
-    color: #fff;
+.right {
+    float: right;
+    display: inline-block;
+    margin-right: 0px;
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 60px;
+        }
+    }
 }
 </style>

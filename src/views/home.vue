@@ -1,94 +1,157 @@
 <template>
-    <div class="bg">
-        <div>
-            <div >
-                <router-link class="item om1" to="/zhou">zhou</router-link>
+    <div>
+        <div class="box">
+            <Head />
+            <div class="content">
+                <el-carousel indicator-position="outside" height="600px">
+                    <el-carousel-item v-for="item in 5" :key="item">
+                        <img :src="item.img" />
+                    </el-carousel-item>
+                </el-carousel>
             </div>
-            <div >
-                <router-link class="item om2" to="/deong">vue</router-link>
-            </div>
-            <div >
-                <router-link class="item om3" to="/deck">deck</router-link>
-            </div>
-            <div >
-                <router-link class="item om4" to="/jianjie">jianjie</router-link>
+            <div class="coaiso">
+                <div class="box-dome">
+                    <p class="name">周少行,</p>
+                    <p class="name">做时间的朋友</p>
+                </div>
+                <div class="box-iems">
+                    <strong class="Introduction"
+                        >我们是创业者，碰巧还是投资人</strong
+                    >
+                    <p class="jieshao">
+                        十多年的时间里，我们有幸携手诸多标志性的业界领袖，协力完成了这些行业的重塑。作为具有全球视野的长期价值投资者，我们专注于打造兼具高品质与可持续性的优秀企业。
+                    </p>
+                    <p><a href="">了解更多</a></p>
+                </div>
             </div>
         </div>
-
+        <Bottom />
     </div>
 </template>
 <script>
+import Head from '../components/Head.vue'
+import Bottom from '../components/Bottom.vue'
+import { onMounted, onUpdated, onUnmounted } from 'vue'
 export default {
-    name: 'home',
+    //组件名称
+    name: '',
+    //组件参数 ,接收来自父组件的数据
     props: {},
-    components: {},
-    data() {
-        return {}
+    //局部注册的组件
+    components: {
+        Head,
+        Bottom,
     },
+    //组件状态值
+    data() {
+        return {
+            item: [
+                {
+                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-1.jpg',
+                },
+                {
+                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-2.jpg',
+                },
+                {
+                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-3.jpg',
+                },
+                {
+                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-4.jpg',
+                },
+                {
+                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-5.jpg',
+                },
+            ],
+        }
+    },
+    //计算属性
     computed: {},
+    //侦听器
     watch: {},
+    //组件方法
     methods: {},
-    created() {},
-    mounted() {},
+    setup() {
+        onMounted(() => {})
+        onUpdated(() => {})
+        onUnmounted(() => {})
+    },
 }
 </script>
 <style lang='less' scoped>
-.bg {
-     background: url('https://www.liulongbin.top/img/bg.png');
-     height: 100%;
-     background-size: 100% 100%;
-     display: flex;
-     align-items: center;
-    justify-content: center;
-    .nieta {
-        width: 100%;
-        margin: 0 auto;
+.box {
+    width: 80%;
+    margin: 0 auto;
+
+    .content {
+        height: 600px;
+        margin-top: 20px;
+        border: 1px solid #000;
+        .el-carousel__item h3 {
+            color: #475669;
+            font-size: 18px;
+            opacity: 0.75;
+            line-height: 300px;
+            margin: 0;
+            text-align: center;
+        }
     }
-    .item {
-            display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    font-family: 华文中宋;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all ease 0.3s;
-    margin: 20px 0;
-    text-shadow: 1px 1px 1px #444;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .coaiso {
+        display: flex;
+        margin: 100px;
     }
-}
-    .item:hover {
-        color: white;
-        text-decoration: none;
-        box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
-        opacity: 0.9;
-        transform: scale(1.1) rotateZ(3deg);
-        transition: all ease 0.3s;
+    .name {
+        font-size: 50px;
+        font-weight: 900;
+        color: #3f538e;
+        margin-bottom: 50px;
     }
-    .om1 {
-        background-color: #0091ea;
+    .box-dome {
+        width: 40%;
     }
-    .om2 {
-        background-color: #dd5044;
+    .box-iems {
+        width: 50%;
+        a {
+            border-bottom: 3px solid #3f538e;
+            padding-bottom: 5px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: #fe6150;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+        }
     }
-    .om3 {
-        background-color: #41b883;
+    .Introduction {
+        display: block;
+        font-size: 26px;
+        color: #3f538e;
+        font-weight: 700;
+        margin-bottom: 50px;
     }
-    .om4 {
-        background-color: #fd803e;
+    .jieshao {
+        line-height: 38px;
+        font-size: 20px;
+        margin-bottom: 50px;
     }
 
-@media screen and (max-width: 1000px) {
-    .nieta {
-        flex-direction: column-reverse;
-    }
-    .bg .item {
-        margin: 20px 0 0 0;
+    @media screen and (min-width: 375px) and (max-width: 812px) {
+        .coaiso {
+            display: block;
+            margin: 0 ;
+        }
+        .box-dome {
+            width: 100%;
+        }
+        .box-iems {
+            width: 100%;
+        }
     }
 }
 </style>
+
