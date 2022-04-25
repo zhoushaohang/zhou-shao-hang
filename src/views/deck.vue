@@ -1,33 +1,89 @@
 <template>
-<div>
-   deck
-</div>
+  <TouBU />
+
+  <Bottom />
 </template>
-<script>
-import {onMounted,onUpdated,onUnmounted} from 'vue';
-export default {
-//组件名称
-  name: '',
-//组件参数 ,接收来自父组件的数据
-  props: {},
-//局部注册的组件
-  components: {},
-//组件状态值
-  data() {
-    return {};
-  },
-//计算属性
-  computed: {},
-//侦听器
-  watch: {},
-//组件方法
-  methods: {},
-setup() {
-onMounted(() => {})
-onUpdated(() => {})
-onUnmounted(() => {})
+<script setup>
+import TouBU from '../components/TouBu.vue'
+import Bottom from '../components/Bottom.vue'
+import {ref} from 'vue'
+const con = ref('')
+const asi = ref('')
+function ase(id){
+  alert(id)
 }
-};
+const items = [
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+  {
+    id:'1',
+    name:'安顿',
+    age:'214'
+  },
+]
+
+
 </script>
 <style lang='less' scoped>
+ul {
+  margin: 40px;
+}
 </style>

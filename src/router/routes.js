@@ -20,6 +20,16 @@ const routes = [
   path:'/deck',
   component: () => import('../views/deck.vue')
 },
+{
+  name:'echarts',
+  path:'/echarts',
+  component: () => import('../views/echarts.vue')
+},
+{
+  name:'list',
+  path:'/list',
+  component: () => import('../views/list.vue')
+},
 
 ]
 

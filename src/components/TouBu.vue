@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="vaibe">
         <div class="top">
             <div class="left">
-                <router-link to="/">
+                <router-link to="/hoem">
                     <img
                         src="https://www.hillhouseinvestment.com/wp-content/uploads/2021/06/cropped-Screenshot-3.png"
                         alt=""
@@ -11,9 +11,9 @@
             </div>
             <div class="right">
                 <ul>
-                    <li><router-link to="">关于我们</router-link></li>
-                    <li><router-link to="">新闻报道</router-link></li>
-                    <li><router-link to="">EN</router-link></li>
+                    <li><router-link to="/deck">关于我们</router-link></li>
+                    <li><router-link to="/echarts">新闻报道</router-link></li>
+                    <li><router-link to="/list">EN</router-link></li>
                 </ul>
             </div>
         </div>
@@ -21,7 +21,7 @@
 </template>
 <script>
 export default {
-    name: 'head',
+    name: '',
     props: {},
     components: {},
     data() {
@@ -37,9 +37,17 @@ export default {
 }
 </script>
 <style lang='less'  scoped>
+.vaibe {
+    width: 80%;
+    margin: 0 auto;
+}
 .router-link-active {
     text-decoration: none;
     color: #000;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 .top {
     height: 60px;

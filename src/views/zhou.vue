@@ -1,33 +1,20 @@
 <template>
 <div>
-   周
+<button class="fancy-btn">
+  	<slot/>
+	</button>
 </div>
 </template>
-<script>
-import {onMounted,onUpdated,onUnmounted} from 'vue';
-export default {
-//组件名称
-  name: '',
-//组件参数 ,接收来自父组件的数据
-  props: {},
-//局部注册的组件
-  components: {},
-//组件状态值
-  data() {
-    return {};
-  },
-//计算属性
-  computed: {},
-//侦听器
-  watch: {},
-//组件方法
-  methods: {},
-setup() {
-onMounted(() => {})
-onUpdated(() => {})
-onUnmounted(() => {})
-}
-};
+<script setup>
 </script>
 <style lang='less' scoped>
+.fancy-btn {
+  color: #fff;
+  background: linear-gradient(315deg, #42d392 25%, #647eff);
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 </style>

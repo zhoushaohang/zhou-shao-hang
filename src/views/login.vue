@@ -1,7 +1,7 @@
 <template>
     <div class="bg">
         <div class="zhuce">
-            <el-input class="inp w-50 m-2" :suffix-icon="Calendar" v-model="from.use" placeholder="请输入账号" size="large" style="margin-top: 80px;" />
+            <el-input class="inp w-50 m-2"  v-model="from.use" placeholder="请输入账号" size="large" style="margin-top: 80px;" />
             <el-input
                 class="inp w-50 m-2"
                 v-model="from.pas"
@@ -9,7 +9,6 @@
                 placeholder="请输入密码"
                 show-password
                 size="large"
-                :suffix-icon="Calendar"
             />
             <div class="but">
             <el-button type="primary" size="large" @click="dinjia">登录</el-button>
@@ -61,15 +60,22 @@ export default {
         }
     },
     created() {},
-    mounted() {},
+    mounted() {
+            history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    },
 }
 </script>
 <style lang='less' scoped>
+body {
+    width: 100% !important;
+}
 .bg {
     width: 100%;
-    height: 840px;
-    background: url('../img/bg.jpeg');
-    background-size: 100% 100%;
+    height: 842px;
+    background: url('../img/bg.gif');
     display: flex;
     justify-content: center;
     align-items: center;

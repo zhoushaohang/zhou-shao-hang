@@ -1,13 +1,8 @@
 <template>
+    <TouBu />
     <div>
         <div class="box">
-            <Head />
             <div class="content">
-                <el-carousel indicator-position="outside" height="600px">
-                    <el-carousel-item v-for="item in 5" :key="item">
-                        <img :src="item.img" />
-                    </el-carousel-item>
-                </el-carousel>
             </div>
             <div class="coaiso">
                 <div class="box-dome">
@@ -25,11 +20,11 @@
                 </div>
             </div>
         </div>
-        <Bottom />
     </div>
+    <Bottom />
 </template>
 <script>
-import Head from '../components/Head.vue'
+import TouBu from '../components/TouBu.vue'
 import Bottom from '../components/Bottom.vue'
 import { onMounted, onUpdated, onUnmounted } from 'vue'
 export default {
@@ -39,31 +34,10 @@ export default {
     props: {},
     //局部注册的组件
     components: {
-        Head,
+        TouBu,
         Bottom,
     },
     //组件状态值
-    data() {
-        return {
-            item: [
-                {
-                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-1.jpg',
-                },
-                {
-                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-2.jpg',
-                },
-                {
-                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-3.jpg',
-                },
-                {
-                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-4.jpg',
-                },
-                {
-                    img: 'https://www.hillhouseinvestment.com/wp-content/uploads/2019/09/feature-5.jpg',
-                },
-            ],
-        }
-    },
     //计算属性
     computed: {},
     //侦听器
@@ -85,7 +59,12 @@ export default {
     .content {
         height: 600px;
         margin-top: 20px;
+        background: url('../img/bg.gif');
         border: 1px solid #000;
+        img {
+            width: 100%;
+            height: 100%;
+        }
         .el-carousel__item h3 {
             color: #475669;
             font-size: 18px;
