@@ -10,7 +10,6 @@ import 'animate.css';
 const app = createApp(App);
 app.use(router)
 // app.use(Vuex)
-
 app.use(ElementPlus)
 // app.use(echarts)
 app.config.globalProperties.axios = axios
