@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add VueAxios
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add vite@2.9.2
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\软件\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;D:\微信web开发者工具\dll;D:\软件\微信web开发者工具\dll;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm
@@ -14,28 +14,20 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/VueAxios: Not found
-      at Request.params.callback [as _callback] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
-      at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
-      at Request.emit (events.js:400:28)
-      at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
-      at Request.emit (events.js:400:28)
-      at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141657:12)
-      at Object.onceWrapper (events.js:519:28)
-      at IncomingMessage.emit (events.js:412:35)
-      at endReadableNT (internal/streams/readable.js:1317:12)
-      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Administrator\Desktop\novogene\node_modules\esbuild-windows-64\esbuild.exe'
 
 npm manifest: 
   {
     "name": "novogene",
     "version": "0.0.0",
+    "license": "ISC",
     "scripts": {
       "dev": "vite --open",
       "build": "vite build",
       "preview": "vite preview"
     },
     "dependencies": {
+      "@element-plus/icons-vue": "^1.1.4",
       "animate.css": "^4.1.1",
       "axios": "^0.26.1",
       "echarts": "^5.3.1",
@@ -52,7 +44,10 @@ npm manifest:
       "unplugin-auto-import": "^0.7.1",
       "unplugin-vue-components": "^0.19.2",
       "vite": "^2.7.2"
-    }
+    },
+    "main": "index.js",
+    "repository": "https://github.com/zhoushaohang/novogene.git",
+    "author": "周少行 <1181842363@qq.com>"
   }
 
 yarn manifest: 

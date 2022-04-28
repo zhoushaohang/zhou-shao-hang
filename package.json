@@ -1,6 +1,7 @@
 {
   "name": "novogene",
   "version": "0.0.0",
+  "license": "ISC",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
@@ -24,5 +25,8 @@
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.2",
     "vite": "^2.7.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/zhoushaohang/novogene.git",
+  "author": "周少行 <1181842363@qq.com>"
 }
