@@ -30,6 +30,11 @@ const routes = [
   path:'/list',
   component: () => import('../views/list.vue')
 },
+{
+  name:'class',
+  path:'/class',
+  component: () => import('../views/class.vue')
+},
 
 ]
 

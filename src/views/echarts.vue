@@ -2,8 +2,10 @@
 <TouBU/>
   <Zhou @click="vaoi">
     DINA❤️
+    我给错请我吃
   </Zhou>
 <Bottom/>
+
 </template>
 <script setup>
 import { ref } from 'vue'

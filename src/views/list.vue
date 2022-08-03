@@ -1,6 +1,8 @@
 <template>
 <TouBu/>
 <Bottom/>
+
+<sup>2</sup>
 </template>
 <script setup>
 import TouBu from '../components/TouBu.vue'
