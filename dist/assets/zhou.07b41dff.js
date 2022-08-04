@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as _,a as o,m as s}from"./index.ad5e9876.js";const n={},r={class:"fancy-btn"};function c(e,d){return a(),_("div",null,[o("button",r,[s(e.$slots,"default",{},void 0,!0)])])}var l=t(n,[["render",c],["__scopeId","data-v-6e4b9e3e"]]);export{l as default};
