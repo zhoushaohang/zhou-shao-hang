@@ -37,6 +37,7 @@ const value1 = ref(true);
 function guiHi() {}
 </script>
 <style lang="less" scoped>
+
 .vaibe {
   width: 80%;
   margin: 0 auto;
