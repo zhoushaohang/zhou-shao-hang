@@ -3,7 +3,11 @@
   <div>
     <div class="box">
       <div class="content">
-        <video  preload muted autoplay loop
+        <video
+          preload
+          muted
+          autoplay
+          loop
           src="https://cdn.uino.cn/thingjs/thingjs-city/thingjs_city_banner.mp4"
         ></video>
       </div>
@@ -64,7 +68,6 @@ export default {
       width: 100%;
       height: 100%;
     }
-
 
     .el-carousel__item h3 {
       color: #475669;

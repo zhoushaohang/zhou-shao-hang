@@ -31,7 +31,6 @@ export default {
 
     //测试请求方法
     const getData = function () {
-      
       axios.get("http://127.0.0.1:4523/mock/856723/echres1").then((res) => {
         testData.list = res.data
         console.log(testData);

@@ -16,13 +16,13 @@
           <li><router-link to="/list">EN</router-link></li>
           <li @click="guiHi">
             <el-switch
-    v-model="value1"
-    class="mt-2"
-    style="margin-left: 24px"
-    inline-prompt
-    :active-icon="CircleCheckFilled"
-    :inactive-icon="CircleCloseFilled"
-  />
+              v-model="value1"
+              class="mt-2"
+              style="margin-left: 24px"
+              inline-prompt
+              :active-icon="CircleCheckFilled"
+              :inactive-icon="CircleCloseFilled"
+            />
           </li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
   </div>
 </template>
 <script setup>
-import { CircleCheckFilled, CircleCloseFilled } from '@element-plus/icons-vue'
+import { CircleCheckFilled, CircleCloseFilled } from "@element-plus/icons-vue";
 import { ref } from "vue";
 const value = ref("");
 const value1 = ref(true);
@@ -50,11 +50,11 @@ a {
   color: #000;
 }
 ul li a {
-transition: all 0.7s;
+  transition: all 0.7s;
 }
 ul li a:hover {
-border-bottom: 2px solid #50b748;
-color: #50b748;
+  border-bottom: 2px solid #50b748;
+  color: #50b748;
 }
 
 .top {
