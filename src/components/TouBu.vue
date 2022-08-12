@@ -14,27 +14,13 @@
           <li><router-link to="/deck">关于我们</router-link></li>
           <li><router-link to="/echarts">新闻报道</router-link></li>
           <li><router-link to="/list">EN</router-link></li>
-          <li @click="guiHi">
-            <el-switch
-              v-model="value1"
-              class="mt-2"
-              style="margin-left: 24px"
-              inline-prompt
-              :active-icon="CircleCheckFilled"
-              :inactive-icon="CircleCloseFilled"
-            />
-          </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
 <script setup>
-import { CircleCheckFilled, CircleCloseFilled } from "@element-plus/icons-vue";
-import { ref } from "vue";
-const value = ref("");
-const value1 = ref(true);
-function guiHi() {}
+
 </script>
 <style lang="less" scoped>
 
