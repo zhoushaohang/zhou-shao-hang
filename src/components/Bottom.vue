@@ -4,8 +4,8 @@
    <p>
       <p @click="cte=true || false" class="imfzc">W E C H A T</p>
       <a href="">W E I B O</a>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备2022024295号</a>
    </p>
-   <div class="img-01" v-show="cte"><img src="../img/01.jpg" alt=""></div>
 </div>
 </template>
 <script setup>
@@ -15,16 +15,13 @@ const cte = ref(false)
 <style lang='less' scoped>
 .bottom {
    position: relative;
-   height: 250px;
    background-color: #efefef;
    overflow: hidden;
-   margin-top: 50px;
+   margin-top: 1.3333rem;
    h4 {
       text-align: center;
-      font-size: 20px;
+      font-size: 1rem;
       color: #595959;
-      margin-top: 100px;
-      margin-bottom: 20px;
    }
    p {
       text-align:center;
@@ -32,8 +29,8 @@ const cte = ref(false)
          text-decoration: none;
          color: #000;
          font-weight: 700;
-         font-size: 20px;
-         padding: 0 20px;
+         font-size: .5333rem;
+         padding: 0 .5333rem;
       }
    }
    .img-01 {
@@ -42,7 +39,7 @@ const cte = ref(false)
       bottom: 0;
       left: 29%;
       right: 0;
-      width: 200px;
+      width: 5.3333rem;
       img {
          width: 100%;
          height: 100%;
@@ -51,12 +48,11 @@ const cte = ref(false)
    .imfzc{
          color: #000;
          font-weight: 700;
-         font-size: 20px;
+         font-size: .5333rem;
          display:inline-block;
    }
    .imfzc:hover {
       color: aqua;
-      
    }
 
 }
