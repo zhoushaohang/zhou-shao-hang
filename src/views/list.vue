@@ -22,6 +22,18 @@
         <img :src="`${three3}`">
       </div>
     </div>
+    <!-- 4列表渲染 -->
+    <div>
+      <ul>
+        <li v-for="item in listdata">{{item}}</li>
+      </ul>
+    </div>
+    <!-- 数据绑定 -->
+    <div>
+      <input v-model="codeli" type="text">
+      <h1>{{codeli}}</h1>
+      <button @click="submit">提交</button>
+    </div>
   </div>
   <Bottompro />
 </template>
@@ -29,7 +41,7 @@
 import TouBu from "../components/TouBu.vue";
 import Bottompro from "../components/Bottom.vue";
 
-import { ref } from "vue";
+import { ref  } from "vue";
 
 // 功能1
 const list = ref(false)
@@ -71,6 +83,16 @@ function three() {
   three3.value = 'https://en.novogene.com/wp-content/uploads/sites/4/2022/09/Case-study-Epi-WGBS-Dnmt3b-20220826_1.png'
 }
 
+// 功能4
+const listdata = ref([])
+
+// 功能5
+const codeli = ref()
+
+function submit() {
+  listdata.value = codeli.value;
+  codeli.value = "";
+}
 </script>
 <style lang="less" scoped>
 .box {
